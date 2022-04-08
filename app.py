@@ -16,6 +16,7 @@ Station = Base.classes.station
 session = Session(engine)
 
 app = Flask(__name__)
+app.run(debug=False)
 @app.route("/")
 def welcome():
     return(
